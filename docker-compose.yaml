@@ -64,6 +64,7 @@ services:
    - "80:8080"
    - "443:8443"
   volumes:
+   - ./data/nginx/nginx.conf:/etc/nginx/nginx.conf:rw
    - /etc/localtime:/etc/localtime:ro
    - /etc/timezone:/etc/timezone:ro
    - ./zbx_env/etc/ssl/nginx:/etc/ssl/nginx:ro
